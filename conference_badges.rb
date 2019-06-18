@@ -24,5 +24,5 @@ def printer(attendees)
     puts assignment
   end 
 end 
-printer
+printer(attendees)
   
