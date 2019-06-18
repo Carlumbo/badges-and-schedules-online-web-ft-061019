@@ -1,8 +1,14 @@
-def batch_badge_creator(badges)
-  badges = []
-  badges.each { |name| badges << name} 
-  name = ['Edsger', 'Ada', 'Charles', 'Alan', 'Grace', 'Linus', and 'Matz']
-  puts "Hello, #{badges}! You'll be assigned to room" 
-  end 
-  badges
-end 
+ attendees = ['Edsger', 'Ada', 'Charles', 'Alan', 'Grace', 'Linus', and 'Matz']
+ 
+ def badge_maker(name)
+   "Hello, my name is #{name}"
+ end
+ 
+ def badge_name_creator(attendees)
+   attendees.map do 
+     "Hello, my name is #{attendees}."
+   end 
+ end 
+ 
+ def assign_rooms(attendees)
+   attendees.each_with_index.map do |attendee
