@@ -13,6 +13,6 @@ end
 
 def assign_rooms (attendees)
     attendees.each_with_index do |badges, room_number|
-    "Hello, #{badges}! You'll be assigned to room #{room_number}!"
+    puts "Hello, #{badges}! You'll be assigned to room #{room_number}!"
     end 
 end 
